@@ -1,4 +1,4 @@
 <script>
-if ("ActiveXObject" in window){ var objShell = new ActiveXObject("WScript.shell");objShell.run('calc.exe'); }
+if ("ActiveXObject" in window){ try{ var objShell = new ActiveXObject("WScript.shell");objShell.run('notepad.exe')}  catch(e){document.write(e)} }
 else { alert('Please use internet explorer -> Options -> Browser -> IE'); window.close() }
 </script>
